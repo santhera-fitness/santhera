@@ -37,17 +37,27 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        .logo-container { display: flex; align-items: center; text-decoration: none; }
+        .logo-container { 
+            display: flex; 
+            align-items: center; 
+            text-decoration: none; 
+        }
         
-        /* Stil pentru logoul online */
+        /* Ajustare pentru încadrarea logoului */
         .logo-img { 
-            height: 60px; 
+            height: 50px; /* Poți modifica mărimea aici */
             width: auto; 
-            margin-right: 10px;
+            margin-right: 12px;
             display: block;
+            object-fit: contain;
         }
 
-        .logo-text { font-weight: 700; font-size: 1.5rem; color: var(--accent-green); }
+        .logo-text { 
+            font-weight: 700; 
+            font-size: 1.5rem; 
+            color: var(--accent-green); 
+            letter-spacing: 1px;
+        }
 
         nav a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 400; transition: 0.3s; }
         nav a:hover { color: var(--accent-green); }
@@ -110,7 +120,8 @@
 <body>
 
     <nav>
-        <a href="https://imgbb.com/"><img src="https://i.ibb.co/G4YbLxF1/santhera-logo-jpg.png" alt="santhera logo jpg" border="0"></a>
+        <a href="#" class="logo-container">
+            <img src="https://i.ibb.co/G4YbLxF1/santhera-logo-jpg.png" alt="Santhera Logo" class="logo-img">
             <span class="logo-text">SANTHERA</span>
         </a>
         <div>
